@@ -1,9 +1,20 @@
 /* work sans from google font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
-
+/* shared style */
 *{
     font-family: 'Work Sans', sans-serif;
     
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+
 }
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -51,4 +62,87 @@ font-weight: 400;
 }
 .img{
     width: 100%;
+    margin-top: 20px;
+}
+/* main section */
+.img-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature{
+    display: flex;
+    padding: 30px 130px;
+}
+.h2-tag{
+    font-size: 45px;
+    font-weight: 500;
+}
+.dark-colour{
+   color: #727272;
+
+}
+.black-colour{
+ color: #131313;
+}
+.orrage-color{
+    color: #FF900E;
+
+}
+.text-section{
+    padding-left: 76px;
+    padding-top: 280px;
+   
+}
+
+/* responsive media queries */
+
+/* mobile devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    .banner-content{
+        width:320px
+    }
+    nav , .feature{
+        flex-direction: column;
+    }
+    .feature{
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .img-section{
+        padding-top: 10px;
+        grid-template-columns:1fr ;
+    } 
+    .text-section{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+  
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+   header{
+    padding: 20px;
+   }
+    nav, .feature{
+        flex-direction: column;
+    }
+    .feature{
+        padding: 10px;
+        flex-direction: column-reverse;
+        
+    }
+    .img-section{
+
+       margin-top: 10px;
+        align-items: center;
+    }
+    .text-section{
+        padding-top: 10px;
+        
+    }
+   
 }
