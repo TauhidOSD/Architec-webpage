@@ -94,6 +94,40 @@ font-weight: 400;
     padding-top: 280px;
    
 }
+/* feature-description  */
+.feature-description{
+    display: flex;
+    padding: 80px 130px;
+}
+.span{
+    width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 20px 40px;
+   
+}
+.h1-tag{
+color:  #131313;
+font-size: 45px;
+font-weight: 700;
+}
+.h3-tag{
+color: #131313;
+font-size: 20px;
+font-weight: 600;
+}
+.p1-tag{
+color:  #727272;
+font-size: 16px;
+font-weight: 400;
+}
+.img-1{
+width: 708px;
+
+border-radius: 8px;
+
+}
 
 /* responsive media queries */
 
